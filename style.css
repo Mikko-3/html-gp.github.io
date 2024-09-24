@@ -1,0 +1,27 @@
+/*<weight>: Use a value from 100 to 900 */
+
+/*HEADERFONTTI*/
+.bitter-font {
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+/*TUOTENIMIFONTTI*/
+.rosarivo-regular {
+    font-family: "Rosarivo", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.rosarivo-regular-italic {
+    font-family: "Rosarivo", cursive;
+    font-weight: 400;
+    font-style: italic;
+}
+/*TEKSTIT, HINNAT*/
+.martel-regular {
+    font-family: "Martel", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*----------------------------------*/
