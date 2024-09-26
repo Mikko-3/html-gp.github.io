@@ -12,6 +12,13 @@
     font-weight: 700;
     font-style: normal;
 }
+
+.bitter-footer {
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
 /*TUOTENIMIFONTTI*/
 .rosarivo-regular {
     font-family: "Rosarivo", cursive;
@@ -64,6 +71,12 @@ header {
     margin:0;
 }
 
+#logo {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
 header img{
     width: 25px;
     margin-right: 10px;
@@ -78,30 +91,40 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #875e2e;
+    background-color: #6A4F39;
     display: flex;
     justify-content: center;
-  }
-  
-  li {
+}
+
+li {
     float: left;
-  }
-  
-  li a {
+}
+
+li a {
     display: block;
     color: #FFFFFF;
     text-align: center;
     padding: 10px 12px;
     text-decoration: none;
     font-size: 150%;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
+}
+
+li a:hover {
     background-color: #000000;
-  }
+}
+
+.active {
+    background-color: #504221;
+}
+
+footer {
+    background-color: #6A4F39;
+    color: #FFFFFF;
+}
 
 
+
+/*----------------------------------*/
 @media only screen and (max-width: 420px) {
     body {
         color: inherit;
