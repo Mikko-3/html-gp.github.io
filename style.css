@@ -39,26 +39,24 @@
 /*--------------BODY-----------------*/
 body {
     background-color: #F3DFA2;
+    margin: 0;
 }
-
 
 
 /*-----------HEADER & NAV------------*/
 header {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 #logo {
     width: 50px;
     display: flex;
-    justify-content: center;
-}
-
-header img{
-    width: 25px;
-    margin-right: 10px;
-    margin-left: 10px;
+    justify-content: left;
 }
 
 ul {
@@ -96,23 +94,26 @@ li a:hover {
 }
 
 /*--------------FOOTER-------------*/
-footer {
+.footer {
     background-color: #6A4F39;
     color: #FFFFFF;
+    margin: 0;
+    padding-bottom: 5px;
 }
 /*----------------------------------*/
+/*PUHELIN*/
 @media only screen and (max-width: 420px) {
     body {
         color: inherit;
     }
 }
-
+/*TABLETTI*/
 @media only screen and (min-width: 421px) {
     body {
         color: inherit;
     }
 }
-
+/*TIETOKONE*/
 @media only screen and (min-width: 1024px) {
     body {
         color: inherit;
