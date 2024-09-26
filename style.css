@@ -32,12 +32,14 @@
 /*----------------------------------*/
 
 /*Ihan kauhea atm, pitää korjata*/
-header {
+/*eader {
     position: fixed;
     width: 100%;
     height: 4%;
     font-size: 160%;
     background-color: chocolate;
+    display: flex;
+
 }
 #etusivu {
     border-style: solid;
@@ -56,5 +58,64 @@ header {
     border-color: antiquewhite;
     background-color: brown;
     color:black;
-}
+}*/
 /*----------------------------------*/
+header {
+    margin:0;
+}
+
+header img{
+    width: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+ul {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #875e2e;
+    display: flex;
+    justify-content: center;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 150%;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #000000;
+  }
+
+
+@media only screen and (max-width: 420px) {
+    body {
+        color: inherit;
+    }
+}
+
+@media only screen and (min-width: 421px) {
+    body {
+        color: inherit;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        color: inherit;
+    }
+}
