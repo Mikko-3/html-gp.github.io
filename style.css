@@ -9,7 +9,7 @@
 .bitter-nav {
     font-family: "Bitter", serif;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -22,53 +22,31 @@
 /*TUOTENIMIFONTTI*/
 .rosarivo-regular {
     font-family: "Rosarivo", cursive;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
 }
 .rosarivo-regular-italic {
     font-family: "Rosarivo", cursive;
-    font-weight: 400;
+    font-weight: 600;
     font-style: italic;
 }
 /*TEKSTIT, HINNAT*/
 .martel-regular {
     font-family: "Martel", serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
 }
-/*----------------------------------*/
+/*--------------BODY-----------------*/
+body {
+    background-color: #F3DFA2;
+}
 
-/*Ihan kauhea atm, pitää korjata*/
-/*eader {
-    position: fixed;
-    width: 100%;
-    height: 4%;
-    font-size: 160%;
-    background-color: chocolate;
-    display: flex;
 
-}
-#etusivu {
-    border-style: solid;
-    border-color: antiquewhite;
-    background-color: brown;
-    color:black;
-}
-#juoma {
-    border-style: solid;
-    border-color: antiquewhite;
-    background-color: brown;
-    color:black;
-}
-#ruoka {
-    border-style: solid;
-    border-color: antiquewhite;
-    background-color: brown;
-    color:black;
-}*/
-/*----------------------------------*/
+
+/*-----------HEADER & NAV------------*/
 header {
-    margin:0;
+    margin: 0px;
+    padding: 0px;
 }
 
 #logo {
@@ -117,13 +95,11 @@ li a:hover {
     background-color: #504221;
 }
 
+/*--------------FOOTER-------------*/
 footer {
     background-color: #6A4F39;
     color: #FFFFFF;
 }
-
-
-
 /*----------------------------------*/
 @media only screen and (max-width: 420px) {
     body {
