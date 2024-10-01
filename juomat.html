@@ -17,6 +17,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martel&display=swap" rel="stylesheet">
+    <style>
+        .button-89 {
+          --b: 3px;   /* border thickness */
+          --s: .45em; /* size of the corner */
+          --color: #373B44;
+          
+          padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+          color: var(--color);
+          --_p: var(--s);
+          background:
+            conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+            var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+          transition: .3s linear, color 0s, background-color 0s;
+          outline: var(--b) solid #0000;
+          outline-offset: .6em;
+          font-size: 16px;
+        
+          border: 0;
+        
+          user-select: none;
+          -webkit-user-select: none;
+          touch-action: manipulation;
+        }
+        
+        .button-89:hover,
+        .button-89:focus-visible{
+          --_p: 0px;
+          outline-color: var(--color);
+          outline-offset: .05em;
+        }
+        
+        .button-89:active {
+          background: var(--color);
+          color: #fff;
+        }
+        </style>
 </head>
 
 <body>
@@ -45,25 +81,55 @@
 <div class="kahvit">
     <h2 class="bitter-font">Kahvit</h2>
         <div class="tuotteet">
-        <h3 class="rosarivo-regular">Kopi Luwak</h3>
-        <p class="martel-regular">10€</p>
-        <img class="tuotekuvat" src="kahvit\kopi_luwak.jpg" alt="Kuppi Kopi Luwak -kahvia.">
-        <h3 class="rosarivo-regular">Jamaican Blue Mountain</h3>
-        <p class="martel-regular">8€</p>
-        <img class="tuotekuvat" src="kahvit\blue_mountain.jpg" alt="Kuppi Blue Mountain -kahvia.">
-        <h3 class="rosarivo-regular">Hacienda La Esmeralda</h3>
-        <p class="martel-regular">8,50€</p>
-        <img class="tuotekuvat" src="kahvit\hacienda_la_esmeralda.jpg" alt="Kuppi Hacienda La Esmeralda -kahvia.">
-        <h3 class="rosarivo-regular">Nepal Himalayan Lalitpur</h3>
-        <p class="martel-regular">9€</p>
-        <img class="tuotekuvat" src="kahvit\himalayan_coffee.jpg" alt="Kuppi Himalayan -kahvia.">
-        <h3 class="rosarivo-regular">Ospina Dynasty</h3>
-        <p class="martel-regular">15€</p>
-        <img class="tuotekuvat" src="kahvit\ospina_dynasty.jpg" alt="Kuppi Ospina Dynasty -kahvia.">
-        <h3 class="rosarivo-regular">St. Helena</h3>
-        <p class="martel-regular">7,50€</p>
-        <img class="tuotekuvat" src="kahvit\st_helena.jpg" alt="Kuppi St. Helena -kahvia.">
-    </div>
+            <h3 class="rosarivo-regular">Wild Kopi Luwak, Bali</h3>
+                <p class="martel-regular">10€<br>
+                Lue lisää valmistajan sivuilta:<br></p>
+                <form action="https://seaislandcoffee.com/products/kopi-luwak-bali-coffee?variant=40326165168171" method="get" target="_blank">
+                <button class="button-89" type="submit">Sea Island Coffee</button>
+                </form>
+                <br>
+                <img class="tuotekuvat" src="kahvit\kopi_luwak.jpg" alt="Kuppi Kopi Luwak -kahvia.">
+            <h3 class="rosarivo-regular">Jamaican Blue Mountain blend</h3>
+                <p class="martel-regular">8€<br>
+                Lue lisää valmistajan sivuilta:<br></p>
+                <form action="https://bluemountaincoffee.com/our-coffee/" method="get" target="_blank">
+                <button class="button-89" type="submit">Blue Mountain Coffee</button>
+                </form>
+                <br>
+                <img class="tuotekuvat" src="kahvit\blue_mountain.jpg" alt="Kuppi Blue Mountain -kahvia.">
+            <h3 class="rosarivo-regular">Hacienda La Esmeralda</h3>
+                <p class="martel-regular">8,50€<br>
+                Lue lisää valmistajan sivuilta:<br></p>
+                <form action="https://haciendaesmeralda.com/" method="get" target="_blank">
+                <button class="button-89" type="submit">Hacienda La Esmeralda</button>
+                </form>
+                <br>
+                <img class="tuotekuvat" src="kahvit\hacienda_la_esmeralda.jpg" alt="Kuppi Hacienda La Esmeralda -kahvia.">
+            <h3 class="rosarivo-regular">Himalayan Lalitpur</h3>
+                <p class="martel-regular">9€<br>
+                Lue lisää valmistajan sivuilta:<br></p>
+                <form action="https://nepalcoffeecompany.com/coffee/" method="get" target="_blank">
+                <button class="button-89" type="submit">Nepal Coffee Company</button>
+                </form>
+                <br>
+                <img class="tuotekuvat" src="kahvit\himalayan_coffee.jpg" alt="Kuppi Himalayan -kahvia.">
+            <h3 class="rosarivo-regular">Ospina Dynasty</h3>
+                <p class="martel-regular">15€<br>
+                Lue lisää valmistajan sivuilta:<br></p>
+                <form action="https://www.ospinacoffee.com/products/index.html" method="get" target="_blank">
+                <button class="button-89" type="submit">Ospina Coffee</button>
+                </form>
+                <br>
+                <img class="tuotekuvat" src="kahvit\ospina_dynasty.jpg" alt="Kuppi Ospina Dynasty -kahvia.">
+            <h3 class="rosarivo-regular">St. Helena</h3>
+                <p class="martel-regular">7,50€<br>
+                Lue lisää valmistajan sivuilta:<br></p>
+                <form action="https://sthelena.coffee/" method="get" target="_blank">
+                <button class="button-89" type="submit">St. Helena Coffee</button>
+                </form>
+                <br>
+                <img class="tuotekuvat" src="kahvit\st_helena.jpg" alt="Kuppi St. Helena -kahvia.">
+        </div>
 </div>
 <footer class="bitter-footer">
 
