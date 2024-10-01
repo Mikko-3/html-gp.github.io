@@ -41,10 +41,23 @@ body {
     background-color: #F3DFA2;
     margin: 0;
 }
-
+/*--------INXEX SIVU-----------*/
 .indexteksti {
     padding: 1%;
 }
+/* TÄHÄN ON JOSSAIN VAIHEESSA KOSKETTAVA*/
+.google-map {
+    padding-bottom: 50%;
+    position: relative;
+  }
+  
+  .google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+  }
 
 /*-----------HEADER & NAV------------*/
 header {
