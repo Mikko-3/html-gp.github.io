@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Martel&display=swap" rel="stylesheet">
     <style>
         .button-89 {
+        /*Nappi CSS Scan -sivustolta. Tekijä: Temani Afif*/
           --b: 3px;   /* border thickness */
           --s: .45em; /* size of the corner */
           --color: #373B44;
@@ -52,6 +53,58 @@
           background: var(--color);
           color: #fff;
         }
+
+        .kahvit {
+            text-align: center;
+            margin: 1%;
+        }
+
+        .tuotteet {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .tuotekortit {
+            display:flex;
+            flex-flow: row wrap;
+            flex-shrink: 1;
+            padding: 1%;
+            padding-bottom: 5px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            background-color: whitesmoke;
+            width: 45%;
+            border-radius: 5px;
+            box-shadow: 3px 3px rgba(0, 0, 0, 0.6);
+            
+        }
+
+        .tuotekuvaus {
+            width: 45%;
+            justify-content: flex-end;
+            align-content: flex-start;
+            margin-left: 2%;
+            text-align: center;
+        }
+
+        .tuotekuvat {
+            width: 50%;
+            order:-1;
+            justify-content: center;
+            align-items: flex-start;
+
+        }
+
+        .tuotekuvat img {
+            width: 100%;
+            border-style: solid;
+            border-width: 3px;
+            border-color: black;
+            border-radius: 10px;
+        }
+
         </style>
 </head>
 
@@ -74,64 +127,92 @@
     
 </body>
 <!--Sivun otsikko ja lyhyt kuvaus-->
-<h1 class="bitter-font">Kahvitarjontamme</h1>
-<p>Tarjoilemme kahvilassamme vain parhaita kahveja maailmalta. Alta löydät tarjontamme ja hinnaston.</p>
-<br>
-<!--Kahvit-->
 <div class="kahvit">
-    <h2 class="bitter-font">Kahvit</h2>
-        <div class="tuotteet">
-            <h3 class="rosarivo-regular">Wild Kopi Luwak, Bali</h3>
+    <h1 class="bitter-font">Kahvitarjontamme</h1>
+    <p>Tarjoilemme kahvilassamme vain parhaita kahveja maailmalta. Alta löydät tarjontamme ja hinnaston.</p>
+    <br>
+</div>
+<!--Tuotteet-->
+<h2 class="bitter-font">Kahvit</h2>
+<div class="tuotteet">
+        <div class="tuotekortit">
+            <div class="tuotekuvaus">
+                <h3 class="rosarivo-regular">Wild Kopi Luwak, Bali</h3>
                 <p class="martel-regular">10€<br>
                 Lue lisää valmistajan sivuilta:<br></p>
                 <form action="https://seaislandcoffee.com/products/kopi-luwak-bali-coffee?variant=40326165168171" method="get" target="_blank">
                 <button class="button-89" type="submit">Sea Island Coffee</button>
                 </form>
-                <br>
-                <img class="tuotekuvat" src="kahvit\kopi_luwak.jpg" alt="Kuppi Kopi Luwak -kahvia.">
-            <h3 class="rosarivo-regular">Jamaican Blue Mountain blend</h3>
+            </div>
+            <div class="tuotekuvat">
+                <img src="kahvit\kopi_luwak.jpg" alt="Kuppi Kopi Luwak -kahvia.">
+            </div>
+        </div>
+        <div class="tuotekortit">
+            <div class="tuotekuvaus">
+                <h3 class="rosarivo-regular">Jamaican Blue Mountain blend</h3>
                 <p class="martel-regular">8€<br>
                 Lue lisää valmistajan sivuilta:<br></p>
                 <form action="https://bluemountaincoffee.com/our-coffee/" method="get" target="_blank">
                 <button class="button-89" type="submit">Blue Mountain Coffee</button>
                 </form>
-                <br>
-                <img class="tuotekuvat" src="kahvit\blue_mountain.jpg" alt="Kuppi Blue Mountain -kahvia.">
-            <h3 class="rosarivo-regular">Hacienda La Esmeralda</h3>
+            </div>
+            <div class="tuotekuvat">
+                <img src="kahvit\blue_mountain.jpg" alt="Kuppi Blue Mountain -kahvia.">
+            </div>
+        </div>
+        <div class="tuotekortit">
+            <div class="tuotekuvaus">
+                <h3 class="rosarivo-regular">Hacienda La Esmeralda</h3>
                 <p class="martel-regular">8,50€<br>
                 Lue lisää valmistajan sivuilta:<br></p>
                 <form action="https://haciendaesmeralda.com/" method="get" target="_blank">
                 <button class="button-89" type="submit">Hacienda La Esmeralda</button>
                 </form>
-                <br>
-                <img class="tuotekuvat" src="kahvit\hacienda_la_esmeralda.jpg" alt="Kuppi Hacienda La Esmeralda -kahvia.">
+            </div>
+            <div class="tuotekuvat">
+                <img src="kahvit\hacienda_la_esmeralda.jpg" alt="Kuppi Hacienda La Esmeralda -kahvia.">
+            </div>
+        </div>
+        <div class="tuotekortit">
+            <div class="tuotekuvaus">
             <h3 class="rosarivo-regular">Himalayan Lalitpur</h3>
                 <p class="martel-regular">9€<br>
                 Lue lisää valmistajan sivuilta:<br></p>
                 <form action="https://nepalcoffeecompany.com/coffee/" method="get" target="_blank">
                 <button class="button-89" type="submit">Nepal Coffee Company</button>
                 </form>
-                <br>
+            </div>
+            <div class="tuotekuvat">
                 <img class="tuotekuvat" src="kahvit\himalayan_coffee.jpg" alt="Kuppi Himalayan -kahvia.">
+            </div>
+        </div>
+        <div class="tuotekortit">
+            <div class="tuotekuvaus">
             <h3 class="rosarivo-regular">Ospina Dynasty</h3>
                 <p class="martel-regular">15€<br>
                 Lue lisää valmistajan sivuilta:<br></p>
                 <form action="https://www.ospinacoffee.com/products/index.html" method="get" target="_blank">
                 <button class="button-89" type="submit">Ospina Coffee</button>
                 </form>
-                <br>
+            </div>
+            <div class="tuotekuvat">
                 <img class="tuotekuvat" src="kahvit\ospina_dynasty.jpg" alt="Kuppi Ospina Dynasty -kahvia.">
+            </div>
+        </div>
+        <div class="tuotekortit">
+            <div class="tuotekuvaus">
             <h3 class="rosarivo-regular">St. Helena</h3>
                 <p class="martel-regular">7,50€<br>
                 Lue lisää valmistajan sivuilta:<br></p>
                 <form action="https://sthelena.coffee/" method="get" target="_blank">
                 <button class="button-89" type="submit">St. Helena Coffee</button>
                 </form>
-                <br>
+            </div>
+            <div class="tuotekuvat">
                 <img class="tuotekuvat" src="kahvit\st_helena.jpg" alt="Kuppi St. Helena -kahvia.">
+            </div>
         </div>
 </div>
-<footer class="bitter-footer">
 
-</footer>
 </html>
