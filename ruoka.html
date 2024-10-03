@@ -20,21 +20,24 @@
 </head>
 
 <body>
+<!-------------HEADER & NAV------------->
+    <h1 class="bitter-nav" id="latte-luwak">Latte Luwak</h1>
     <header class="bitter-nav">
         <ul id="navigaatio">
-            <!--img:hen jonkinlainen kuva joka kuvastaa kyseistä sivua-->
-            <li><img src="logo.png" id="logo" href="index.html"></li>
-            <li>
-                <a href="index.html" id="etusivu">Etusivu</a>
+            <li><a href="index.html"><img src="logo.png" id="logo" alt="Latte Luwakin logo"></a>
             </li>
             <li>
-                <a href="juomat.html" id="juoma">Kahvit</a>
+                <a href="index.html" class="etusivu">Etusivu</a>
             </li>
             <li>
-                <a href="ruoka.html" id="ruoka" class="active">Leivonnaiset</a>
+                <a href="juomat.html" class="juoma">Kahvit</a>
+            </li>
+            <li>
+                <a href="ruoka.html" class="ruoka" id="active">Leivonnaiset</a>
             </li>
         </ul>
     </header>
+
     <!--Sivun otsikko ja lyhyt kuvaus-->
     <h1 class="bitter-font">Leivonnaiset</h1>
     <p>*Lyhyt kuvaus tarjonnasta*</p>
@@ -70,9 +73,22 @@
             <img class="tuotekuvat" src="ruokakuva\voipulla.jpg" alt="Voisilmäpullia">
         </div>
     </div>
+<!--------------FOOTER------------->
+    <div class="footer">
+        <div class="flex-container">
+            <div class="flex-item-left bitter-nav footernimi">
+                Latte Luwak
+            </div>
+            <div class="flex-item-left bitter-nav">
+                otayhteytta@latte-luwak.fi
+            </div>
+            <div class="flex-item-right bitter-nav">
+                Keksittyosoite 16
+            </div>
+            <div class="flex-item-right bitter-nav">
+                +358 41 414 1414
+            </div>
+        </div>
+    </div>
 </body>
-
-<footer class="bitter-footer">
-
-</footer>
 </html>
