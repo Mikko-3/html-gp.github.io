@@ -41,11 +41,11 @@ body {
     background-color: #F3DFA2;
     margin: 0;
 }
+
 /*------------INDEX SIVU-------------*/
 .indexteksti {
     padding: 3%;
 }
-
 /*------------JUOMAT SIVU-------------*/
 .button-89 {
 /*Nappi CSS Scan -sivustolta. Tekijä: Temani Afif*/
@@ -58,6 +58,7 @@ body {
     --_p: var(--s);
     background:
     conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    /*ALLA OLEVA ON "Value Error : background Too many values or values are not recognized"*/
     var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
     transition: .3s linear, color 0s, background-color 0s;
     outline: var(--b) solid #0000;
@@ -67,7 +68,6 @@ body {
     border: 0;
 
     user-select: none;
-    -webkit-user-select: none;
     touch-action: manipulation;
 }
 
@@ -79,7 +79,7 @@ body {
 
 .button-89:active {
     background: var(--color);
-    color: #fff;
+    color: #ffffff;
 }
 
 .kahvit, .leivonnaiset {
@@ -143,7 +143,9 @@ body {
 }
 
 .taulukko {
-    width: 50%;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table {
@@ -159,6 +161,7 @@ th, td {
     border-collapse: collapse;
     width: 22%;
     text-align: center;
+    padding: 5px;
 }
 
 th {
@@ -220,7 +223,6 @@ header {
 }
 
 ul {
-    position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
     list-style-type: none;
