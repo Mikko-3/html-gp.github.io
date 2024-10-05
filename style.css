@@ -330,11 +330,25 @@ li {
         width: 42px;
         margin-left: 2px;
     }
+
+}
+
+@media only screen and (max-width: 750px) {
+    .tuotteet {
+        flex-flow: column wrap;
+    }
+    .tuotekortit {
+        width: 93%;
+        margin-left: 2%;
+    }
     .taulukko {
-        width: 350px;
+        width: 95%;
         margin-left: 5px;
         margin-right: 5px;
         margin-bottom: 10px;
+    }
+    table {
+        width: 95%;
     }
     th {
         font-size: 14px;
@@ -346,26 +360,9 @@ li {
     }
 }
 
-@media only screen and (max-width: 750px) {
-    .tuotteet {
-        flex-flow: column wrap;
-    }
-    .tuotekortit {
-        width: 93%;
-        margin-left: 2%;
-    }
-}
-/*TABLETTI*/
-@media only screen and (min-width: 421px) {
-
-}
 /*VÄLIMUOTO*/
 @media only screen and (min-width: 900px) {
     .flex-item-right, .flex-item-left {
         flex: 0%;
     }
-}
-/*TIETOKONE*/
-@media only screen and (min-width: 1024px) {
-    
 }
