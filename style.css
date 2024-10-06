@@ -337,12 +337,22 @@ li {
         width: 42px;
         margin-left: 2px;
     }
+
+    .tuotteet {
+        flex-flow: column wrap;
+    }
+    .tuotekortit {
+        width: 93%;
+        margin-left: 2%;
+    }
+
     .taulukko {
         width: 95%;
-        max-width: 320px;
-        margin-left: 2px;
-        margin-right: 2px;
+        max-width: 370px;
+        margin-left: 1px;
+        margin-right: 1px;
         margin-bottom: 10px;
+        padding: 0;
     }
     table {
         width: 95%;
@@ -358,7 +368,7 @@ li {
 
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (min-width: 451px) and (max-width: 775px) {
     .tuotteet {
         flex-flow: column wrap;
     }
@@ -367,7 +377,22 @@ li {
         margin-left: 2%;
     }
     .taulukko {
-        max-width: 375px;
+        width: 95%;
+        max-width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+    table {
+        width: 95%;
+    }
+    th {
+        font-size: 15px;
+        padding: 2px;
+    }
+    td {
+        font-size: 13px;
+        padding: 2px;
     }
 }
 
