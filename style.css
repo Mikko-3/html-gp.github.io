@@ -337,6 +337,24 @@ li {
         width: 42px;
         margin-left: 2px;
     }
+    .taulukko {
+        width: 95%;
+        max-width: 320px;
+        margin-left: 2px;
+        margin-right: 2px;
+        margin-bottom: 10px;
+    }
+    table {
+        width: 95%;
+    }
+    th {
+        font-size: 12px;
+        padding: 1px;
+    }
+    td {
+        font-size: 11px;
+        padding: 1px;
+    }
 
 }
 
@@ -349,21 +367,7 @@ li {
         margin-left: 2%;
     }
     .taulukko {
-        width: 95%;
-        margin-left: 5px;
-        margin-right: 5px;
-        margin-bottom: 10px;
-    }
-    table {
-        width: 95%;
-    }
-    th {
-        font-size: 14px;
-        padding: 2px;
-    }
-    td {
-        font-size: 12px;
-        padding: 3px;
+        max-width: 375px;
     }
 }
 
