@@ -312,7 +312,7 @@ li {
 /*----------------------------------*/
 
 /*PUHELIN*/
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 321px) {
     .juoma, .ruoka, .etusivu{
         font-size: 100%;
     }
@@ -320,7 +320,51 @@ li {
         font-size: 160%;
     }
     #logo {
-        width: 35px;
+        width: 36px;
+        margin-left: 2px;
+    }
+
+    .tuotteet {
+        flex-flow: column wrap;
+    }
+    .tuotekortit {
+        width: 93%;
+        margin-left: 2%;
+    }
+
+    .taulukko {
+        width: 95%;
+        margin-left: 1px;
+        margin-right: 1px;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+    table {
+        width: 95%;
+    }
+    th {
+        font-size: 11px;
+        padding: 1px;
+    }
+    td {
+        font-size: 11px;
+        padding: 1px;
+    }
+    .button {
+        font-size: 16px;
+        padding: 5px 5px;
+        margin-top: 5px;
+    }
+}
+@media only screen and (min-width: 322px) and (max-width: 450px) {
+    .juoma, .ruoka, .etusivu{
+        font-size: 115%;
+    }
+    #latte-luwak {
+        font-size: 160%;
+    }
+    #logo {
+        width: 42px;
         margin-left: 2px;
     }
 
@@ -358,7 +402,7 @@ li {
 
 }
 
-@media only screen and (min-width: 413px) and (max-width: 775px) {
+@media only screen and (min-width: 451px) and (max-width: 775px) {
     .tuotteet {
         flex-flow: column wrap;
     }
